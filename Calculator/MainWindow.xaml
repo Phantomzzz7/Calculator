@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calculator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="500" Width="350">
+        Title="Calculator" Height="500" Width="350">
+    
     <Grid Background="Black">
         <Grid.RowDefinitions>
             <RowDefinition Height="125"/>
@@ -26,34 +27,34 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <!-- Row 0 -->
-            <Button Grid.Row="0" Grid.Column="0" Content="⌫" Click="BackspaceButton_Click" Margin="2"/>
-            <Button Grid.Row="0" Grid.Column="1" Content="AC" Click="ClearButton_Click" Margin="2"/>
-            <Button Grid.Row="0" Grid.Column="2" Content="%" Click="OperatorButton_Click" Margin="2"/>
-            <Button Grid.Row="0" Grid.Column="3" Content="÷" Click="OperatorButton_Click" Margin="2"/>
+            <Button Grid.Row="0" Grid.Column="0" Content="⌫" Click="BackspaceButton_Click" Margin="2" Background="DarkGray"/>
+            <Button Grid.Row="0" Grid.Column="1" Content="AC" Click="ClearButton_Click" Margin="2" Background="DarkGray"/>
+            <Button Grid.Row="0" Grid.Column="2" Content="%" Click="OperatorButton_Click" Margin="2" Background="DarkGray"/>
+            <Button Grid.Row="0" Grid.Column="3" Content="÷" Click="OperatorButton_Click" Margin="2" Background="DarkOrange"/>
             <!-- Row 1 -->
-            <Button Grid.Row="1" Grid.Column="0" Content="7" Click="NumberButton_Click" Margin="2"/>
-            <Button Grid.Row="1" Grid.Column="1" Content="8" Click="NumberButton_Click" Margin="2"/>
-            <Button Grid.Row="1" Grid.Column="2" Content="9" Click="NumberButton_Click" Margin="2"/>
-            <Button Grid.Row="1" Grid.Column="3" Content="×" Click="OperatorButton_Click" Margin="2"/>
+            <Button Grid.Row="1" Grid.Column="0" Content="7" Click="NumberButton_Click" Margin="2" Background="DimGray"/>
+            <Button Grid.Row="1" Grid.Column="1" Content="8" Click="NumberButton_Click" Margin="2" Background="DimGray"/>
+            <Button Grid.Row="1" Grid.Column="2" Content="9" Click="NumberButton_Click" Margin="2" Background="DimGray"/>
+            <Button Grid.Row="1" Grid.Column="3" Content="×" Click="OperatorButton_Click" Margin="2" Background="DarkOrange"/>
             <!-- Row 2 -->
-            <Button Grid.Row="2" Grid.Column="0" Content="4" Click="NumberButton_Click" Margin="2"/>
-            <Button Grid.Row="2" Grid.Column="1" Content="5" Click="NumberButton_Click" Margin="2"/>
-            <Button Grid.Row="2" Grid.Column="2" Content="6" Click="NumberButton_Click" Margin="2"/>
-            <Button Grid.Row="2" Grid.Column="3" Content="-" Click="OperatorButton_Click" Margin="2"/>
+            <Button Grid.Row="2" Grid.Column="0" Content="4" Click="NumberButton_Click" Margin="2" Background="DimGray"/>
+            <Button Grid.Row="2" Grid.Column="1" Content="5" Click="NumberButton_Click" Margin="2" Background="DimGray"/>
+            <Button Grid.Row="2" Grid.Column="2" Content="6" Click="NumberButton_Click" Margin="2" Background="DimGray"/>
+            <Button Grid.Row="2" Grid.Column="3" Content="-" Click="OperatorButton_Click" Margin="2" Background="DarkOrange"/>
             <!-- Row 3 -->
-            <Button Grid.Row="3" Grid.Column="0" Content="1" Click="NumberButton_Click" Margin="2"/>
-            <Button Grid.Row="3" Grid.Column="1" Content="2" Click="NumberButton_Click" Margin="2"/>
-            <Button Grid.Row="3" Grid.Column="2" Content="3" Click="NumberButton_Click" Margin="2"/>
-            <Button Grid.Row="3" Grid.Column="3" Content="+" Click="OperatorButton_Click" Margin="2"/>
+            <Button Grid.Row="3" Grid.Column="0" Content="1" Click="NumberButton_Click" Margin="2" Background="DimGray"/>
+            <Button Grid.Row="3" Grid.Column="1" Content="2" Click="NumberButton_Click" Margin="2" Background="DimGray"/>
+            <Button Grid.Row="3" Grid.Column="2" Content="3" Click="NumberButton_Click" Margin="2" Background="DimGray"/>
+            <Button Grid.Row="3" Grid.Column="3" Content="+" Click="OperatorButton_Click" Margin="2" Background="DarkOrange"/>
             <!-- Row 4 -->
-            <Button Grid.Row="4" Grid.Column="0" Content="+/-" Click="SignChangeButton_Click" Margin="2"/>
-            <Button Grid.Row="4" Grid.Column="1"  Content="0" Click="NumberButton_Click" Margin="2"/>
-            <Button Grid.Row="4" Grid.Column="2" Content="." Click="DecimalButton_Click" Margin="2"/>
-            <Button Grid.Row="4" Grid.Column="3" Content="=" Click="EqualsButton_Click" Margin="2"/>
+            <Button Grid.Row="4" Grid.Column="0" Content="+/-" Click="SignChangeButton_Click" Margin="2" Background="DimGray"/>
+            <Button Grid.Row="4" Grid.Column="1"  Content="0" Click="NumberButton_Click" Margin="2" Background="DimGray"/>
+            <Button Grid.Row="4" Grid.Column="2" Content="." Click="DecimalButton_Click" Margin="2" Background="DimGray"/>
+            <Button Grid.Row="4" Grid.Column="3" Content="=" Click="EqualsButton_Click" Margin="2" Background="DarkOrange"/>
         </Grid>
         <TextBox Grid.Row="0" Name="DisplayTextBox" FontSize="36" 
                  HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="10" 
                  IsReadOnly="False" BorderThickness="0" TextAlignment="Right"
-                 Background="Black" />
+                 Background="Black" Foreground="White"/>
     </Grid>
 </Window>
