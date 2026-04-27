@@ -6,10 +6,10 @@
         xmlns:local="clr-namespace:Calculator"
         mc:Ignorable="d"
         Title="MainWindow" Height="500" Width="350">
-    <Grid>
+    <Grid Background="Black">
         <Grid.RowDefinitions>
             <RowDefinition Height="125"/>
-            <RowDefinition Height="*"/>         
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
@@ -23,10 +23,11 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <!-- Row 0 -->
-            <Button Grid.Row="0" Grid.Column="0" Content="AC" Click="ClearButton_Click" Margin="2"/>
-            <Button Grid.Row="0" Grid.Column="1" Content="+/-" Click="SignChangeButton_Click" Margin="2"/>
+            <Button Grid.Row="0" Grid.Column="0" Content="⌫" Click="BackspaceButton_Click" Margin="2"/>
+            <Button Grid.Row="0" Grid.Column="1" Content="AC" Click="ClearButton_Click" Margin="2"/>
             <Button Grid.Row="0" Grid.Column="2" Content="%" Click="OperatorButton_Click" Margin="2"/>
             <Button Grid.Row="0" Grid.Column="3" Content="÷" Click="OperatorButton_Click" Margin="2"/>
             <!-- Row 1 -->
@@ -44,8 +45,15 @@
             <Button Grid.Row="3" Grid.Column="1" Content="2" Click="NumberButton_Click" Margin="2"/>
             <Button Grid.Row="3" Grid.Column="2" Content="3" Click="NumberButton_Click" Margin="2"/>
             <Button Grid.Row="3" Grid.Column="3" Content="+" Click="OperatorButton_Click" Margin="2"/>
-                    
+            <!-- Row 4 -->
+            <Button Grid.Row="4" Grid.Column="0" Content="+/-" Click="SignChangeButton_Click" Margin="2"/>
+            <Button Grid.Row="4" Grid.Column="1"  Content="0" Click="NumberButton_Click" Margin="2"/>
+            <Button Grid.Row="4" Grid.Column="2" Content="." Click="DecimalButton_Click" Margin="2"/>
+            <Button Grid.Row="4" Grid.Column="3" Content="=" Click="EqualsButton_Click" Margin="2"/>
         </Grid>
-        
+        <TextBox Grid.Row="0" Name="DisplayTextBox" FontSize="36" 
+                 HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="10" 
+                 IsReadOnly="False" BorderThickness="0" TextAlignment="Right"
+                 Background="Black" />
     </Grid>
 </Window>
